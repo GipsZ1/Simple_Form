@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="/" method="get" id="form">
+      <h1>Simple Form Validation</h1>
+      <div>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Enter Your Name"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Your password"
+        />
+      </div>
+
+      <div class="btn"><button type="submit">Submit</button></div>
+      <p id="error"></p>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
